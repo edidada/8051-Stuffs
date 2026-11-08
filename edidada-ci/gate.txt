@@ -1,0 +1,18 @@
+# Sources verified to assemble with as31 2.3.1 + edidada-ci/asm51_shim.py
+# when this branch was prepared (11/12 of the assembler files found).
+# CI fails if one of these stops building; everything else is reported
+# in the job summary with a reason tag instead of blocking the run.
+asm/AddressingModes.asm
+asm/dac.asm
+asm/descending.asm
+asm/hexseg.asm
+asm/lab2.asm
+asm/lcd.asm
+asm/led.asm
+asm/led1.asm
+asm/seven.asm
+asm/task1.asm
+asm/task2.asm
+
+# ---- not gated, with the measured reason ----
+# asm/MotorControl.asm   [STRING_FORM] KCODE0: .BYTE '1", "2','3','0'
